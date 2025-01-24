@@ -1,17 +1,19 @@
 'use client';
 
+import { IconMoonStars, IconSunFilled } from '@tabler/icons-react';
 import { ActionIcon, useMantineColorScheme } from '@mantine/core';
-import { IconSunFilled, IconMoonStars } from '@tabler/icons-react';
 
 export function ColorSchemeToggle() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-  const icon = colorScheme === 'light' ? <IconMoonStars /> : <IconSunFilled/>
+  const icon = colorScheme === 'light' ? <IconMoonStars /> : <IconSunFilled />;
   return (
     <ActionIcon
       size="md"
       aria-label="Toggle theme icon"
       onClick={toggleColorScheme}
-      variant='outline'
+      variant="outline"
+      p={4}
+      radius="md"
       color={colorScheme === 'light' ? undefined : 'white'}
     >
       {icon}

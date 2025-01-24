@@ -1,7 +1,7 @@
 'use client';
 
 import { ReactNode } from 'react';
-import { AppShell, UnstyledButton } from '@mantine/core';
+import { AppShell } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { HeaderMenu } from '../HeaderMenu/HeaderMenu';
 import { HeaderMenuMobile } from '../HeaderMenu/HeaderMenuMobile';
@@ -21,7 +21,7 @@ export function AppLayout({ children }: { children: ReactNode }) {
       </AppShell.Header>
 
       <AppShell.Navbar py="md" px={4}>
-        <HeaderMenuMobile toggle={toggle}/>
+        <HeaderMenuMobile toggle={toggle} />
       </AppShell.Navbar>
 
       <AppShell.Main>{children}</AppShell.Main>

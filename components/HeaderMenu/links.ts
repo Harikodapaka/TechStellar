@@ -1,5 +1,11 @@
-import { IconUserSquareRounded, IconLogin2, IconDeviceImacCog, IconUserPlus, IconHome2, IconBriefcase } from '@tabler/icons-react';
-
+import {
+  IconBriefcase,
+  IconDeviceImacCog,
+  IconHome2,
+  IconLogin2,
+  IconUserPlus,
+  IconUserSquareRounded,
+} from '@tabler/icons-react';
 
 export const links = [
   { link: '/', label: 'Home', icon: IconHome2 },
