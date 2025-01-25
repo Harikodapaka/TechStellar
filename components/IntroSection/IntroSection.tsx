@@ -24,13 +24,13 @@ export function IntroSection() {
     <Container size="xl">
       <div className={classes.inner}>
         <div className={classes.content}>
-          <Title className={classes.title} order={2}>
+          <Title order={2} className={classes.title} >
             Welcome to{' '}
             <Text
               inherit
               variant="gradient"
               component="span"
-              gradient={{ from: 'pink', to: 'yellow' }}
+              gradient={{ from: 'tsRed', to: 'yellow' }}
             >
               TechStellar
             </Text>
