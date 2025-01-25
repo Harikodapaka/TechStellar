@@ -1,0 +1,20 @@
+"use client";
+
+import { ActionIcon, Affix, Button, Transition } from "@mantine/core";
+import { useWindowScroll } from "@mantine/hooks";
+import { IconArrowUp } from "@tabler/icons-react";
+
+
+export function ScrollToTop() {
+    const [scroll, scrollTo] = useWindowScroll();
+
+    return (<Affix position={{ bottom: 30, right: 20 }}>
+        <Transition transition="slide-up" mounted={scroll.y > 200}>
+            {(transitionStyles) => (
+                <ActionIcon size={32} variant="filled" aria-label="Scroll to top" style={transitionStyles} onClick={() => scrollTo({ y: 0 })}>
+                    <IconArrowUp size={16} />
+                </ActionIcon>
+            )}
+        </Transition>
+    </Affix>)
+}

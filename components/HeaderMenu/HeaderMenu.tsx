@@ -46,7 +46,7 @@ export function HeaderMenu({ opened, toggle }: { opened: boolean; toggle: () => 
   });
 
   return (
-    <header className={classes.header}>
+    <div className={classes.header}>
       <Container size="xl">
         <div className={classes.inner}>
           <TsLogo />
@@ -65,6 +65,6 @@ export function HeaderMenu({ opened, toggle }: { opened: boolean; toggle: () => 
           </Flex>
         </div>
       </Container>
-    </header>
+    </div>
   );
 }

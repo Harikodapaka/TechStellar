@@ -4,6 +4,7 @@ import React from 'react';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { AppLayout } from '@/components/AppLayout/AppLayout';
 import { theme } from '../theme';
+import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 
 export const metadata = {
   title: 'TechStellar Consulting',
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: any }) {
       <body suppressHydrationWarning>
         <MantineProvider theme={theme} defaultColorScheme="auto">
           <AppLayout>{children}</AppLayout>
+          <ScrollToTop />
         </MantineProvider>
       </body>
     </html>

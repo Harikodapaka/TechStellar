@@ -5,6 +5,7 @@ import { AppShell } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { HeaderMenu } from '@/components/HeaderMenu/HeaderMenu';
 import { HeaderMenuMobile } from '@/components/HeaderMenu/HeaderMenuMobile';
+import { Footer } from '../Footer/Footer';
 
 export function AppLayout({ children }: { children: ReactNode }) {
   const [opened, { toggle }] = useDisclosure();
@@ -25,6 +26,7 @@ export function AppLayout({ children }: { children: ReactNode }) {
       </AppShell.Navbar>
 
       <AppShell.Main>{children}</AppShell.Main>
+      <Footer />
     </AppShell>
   );
 }

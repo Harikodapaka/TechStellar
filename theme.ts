@@ -1,6 +1,6 @@
 'use client';
 
-import { createTheme, MantineColorsTuple } from '@mantine/core';
+import { createTheme, MantineColorsTuple, rem } from '@mantine/core';
 
 const tsRed: MantineColorsTuple = [
   '#ffeaec',
@@ -35,5 +35,15 @@ export const theme = createTheme({
   colors: {
     tsRed,
     tsGrey,
+  },
+  headings: {
+    sizes: {
+      h1: {
+        fontSize: rem(60),
+      },
+      h2: { fontSize: rem(50), },
+      h3: { fontSize: rem(40), },
+      h4: { fontSize: rem(34), },    
+    },
   },
 });
