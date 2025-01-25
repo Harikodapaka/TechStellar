@@ -1,9 +1,11 @@
-import { Welcome } from '../components/Welcome/Welcome';
+import { Footer } from '@/components/Footer/Footer';
+import { IntroSection } from '@/components/IntroSection/IntroSection';
 
 export default function HomePage() {
   return (
     <>
-      <Welcome />
+      <IntroSection />
+      <Footer />
     </>
   );
 }

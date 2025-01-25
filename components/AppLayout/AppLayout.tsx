@@ -3,8 +3,8 @@
 import { ReactNode } from 'react';
 import { AppShell } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { HeaderMenu } from '../HeaderMenu/HeaderMenu';
-import { HeaderMenuMobile } from '../HeaderMenu/HeaderMenuMobile';
+import { HeaderMenu } from '@/components/HeaderMenu/HeaderMenu';
+import { HeaderMenuMobile } from '@/components/HeaderMenu/HeaderMenuMobile';
 
 export function AppLayout({ children }: { children: ReactNode }) {
   const [opened, { toggle }] = useDisclosure();

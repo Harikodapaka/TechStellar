@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import svg404 from '/public/404.svg';
 import { Button, Container, Image, SimpleGrid, Text, Title } from '@mantine/core';
-import classes from './NotFound.module.css';
+import classes from '@/components/NotFound/NotFound.module.css';
 
 export function NotFound() {
   return (

@@ -1,14 +1,13 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { IconChevronDown } from '@tabler/icons-react';
-import TSLogo from '/public/techstellar-logo.svg';
-import { Burger, Center, Container, Flex, Group, Menu, Title } from '@mantine/core';
-import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
-import { links } from './links';
-import classes from './HeaderMenu.module.css';
+import { Burger, Center, Container, Flex, Group, Menu } from '@mantine/core';
+import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle';
+import classes from '@/components/HeaderMenu/HeaderMenu.module.css';
+import { links } from '@/components/HeaderMenu/links';
+import { TsLogo } from '@/components/TsLogo/TsLogo';
 
 export function HeaderMenu({ opened, toggle }: { opened: boolean; toggle: () => void }) {
   const pathName = usePathname();
@@ -50,14 +49,7 @@ export function HeaderMenu({ opened, toggle }: { opened: boolean; toggle: () => 
     <header className={classes.header}>
       <Container size="xl">
         <div className={classes.inner}>
-          <Flex align="center" gap={10}>
-            <Link href="/">
-              <Image width={50} height={50} alt="TechStellar Logo" src={TSLogo} />
-            </Link>
-            <Title component="h1" order={5} w={100} className={classes.title}>
-              TechStellar Consulting
-            </Title>
-          </Flex>
+          <TsLogo />
           <Group gap={5} visibleFrom="sm">
             {items}
           </Group>

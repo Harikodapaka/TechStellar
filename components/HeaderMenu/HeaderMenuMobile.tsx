@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { IconListDetails } from '@tabler/icons-react';
 import { NavLink } from '@mantine/core';
-import { links } from './links';
+import { links } from '@/components/HeaderMenu/links';
 
 export function HeaderMenuMobile({ toggle }: { toggle: () => void }) {
   const pathName = usePathname();
