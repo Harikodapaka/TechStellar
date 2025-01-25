@@ -13,7 +13,6 @@ import {
   ListItem,
   Text,
   ThemeIcon,
-  Title,
   useComputedColorScheme,
 } from '@mantine/core';
 import classes from '@/components/IntroSection/IntroSection.module.css';
@@ -24,17 +23,17 @@ export function IntroSection() {
     <Container size="xl">
       <div className={classes.inner}>
         <div className={classes.content}>
-          <Title order={2} className={classes.title} >
+          <h2 className={classes.title}>
             Welcome to{' '}
             <Text
               inherit
               variant="gradient"
               component="span"
-              gradient={{ from: 'tsRed', to: 'yellow' }}
+              gradient={{ from: 'pink', to: 'yellow' }}
             >
               TechStellar
             </Text>
-          </Title>
+          </h2>
           <Text c="dimmed" mt="md">
             We provide end-to-end IT consulting services in US and Canada, ensuring seamless project
             planning and implementation. Our consultants work with developers, network specialists,

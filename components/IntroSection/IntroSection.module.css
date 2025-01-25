@@ -18,7 +18,9 @@
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-size: rem(65px);
   font-weight: 900;
+  line-height: normal;
   letter-spacing: rem(-2px);
+  margin: 0px;
 
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(50px);

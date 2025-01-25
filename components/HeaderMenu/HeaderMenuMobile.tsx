@@ -18,7 +18,7 @@ export function HeaderMenuMobile({ toggle }: { toggle: () => void }) {
         href={item.link}
         label={item.label}
         active={pathName === link.link}
-        leftSection={<item.icon size={24} stroke={1.5} />}
+        leftSection={item.icon && <item.icon size={24} stroke={1.5} />}
         onClick={closeNav}
       />
     ));
@@ -42,7 +42,7 @@ export function HeaderMenuMobile({ toggle }: { toggle: () => void }) {
         label={link.label}
         active={pathName === link.link}
         component={Link}
-        leftSection={<link.icon size={24} stroke={1.5} />}
+        leftSection={link.icon && <link.icon size={24} stroke={1.5} />}
         onClick={closeNav}
       />
     );
