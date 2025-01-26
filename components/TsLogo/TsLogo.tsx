@@ -8,7 +8,7 @@ export function TsLogo() {
   return (
     <Flex align="center" gap={10}>
       <Link href="/">
-        <Image width={50} height={50} alt="TechStellar Logo" src={TSLogo} unoptimized/>
+        <Image width={50} height={50} alt="TechStellar Logo" src={TSLogo} unoptimized />
       </Link>
       <Title component="h1" order={5} w={100} className={classes.title}>
         TechStellar Consulting

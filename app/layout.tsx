@@ -3,8 +3,8 @@ import '@mantine/core/styles.css';
 import React from 'react';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { AppLayout } from '@/components/AppLayout/AppLayout';
-import { theme } from '../theme';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
+import { theme } from '../theme';
 
 export const metadata = {
   title: 'TechStellar Consulting',
