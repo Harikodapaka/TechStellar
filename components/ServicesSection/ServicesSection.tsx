@@ -64,7 +64,7 @@ export function ServicesSection() {
   ));
 
   return (
-    <Container size="lg" py="xl">
+    <Container size="lg" py="xl" id="services">
       <Group justify="center">
         <Badge variant="filled" size="lg">
           Our Services

@@ -9,7 +9,7 @@ export interface NavLink {
 }
 export const links: NavLink[] = [
   { link: '/', label: 'Home', icon: IconHome2 },
-  // { link: '/services', label: 'Services', icon: IconDeviceImacCog },
+  // { link: '/#services', label: 'Services', icon: IconDeviceImacCog },
   { link: '/contact', label: 'Contact', icon: IconUserSquareRounded },
   // { link: '/careers', label: 'Careers', icon: IconBriefcase },
   // {

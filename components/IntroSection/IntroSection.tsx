@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { IconCheck } from '@tabler/icons-react';
 import TeamWorkDarkSvg from '/public/teamwork-dark.svg';
 import TeamWorkSvg from '/public/teamwork.svg';
@@ -60,10 +61,23 @@ export function IntroSection() {
             </ListItem>
           </List>
           <Group mt={30}>
-            <Button radius="xl" size="md" className={classes.control}>
+            <Button
+              radius="xl"
+              size="md"
+              className={classes.control}
+              component="a"
+              href="#services"
+            >
               Get started
             </Button>
-            <Button variant="default" radius="xl" size="md" className={classes.control}>
+            <Button
+              variant="default"
+              radius="xl"
+              size="md"
+              className={classes.control}
+              component={Link}
+              href="/contact"
+            >
               Contact us
             </Button>
           </Group>

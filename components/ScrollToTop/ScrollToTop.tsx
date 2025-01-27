@@ -16,6 +16,7 @@ export function ScrollToTop() {
             variant="filled"
             aria-label="Scroll to top"
             style={transitionStyles}
+            component="a"
             onClick={() => scrollTo({ y: 0 })}
           >
             <IconArrowUp size={16} />

@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import Idea from '/public/idea.svg';
-import { Button, Container, Divider, Image, Text, Title } from '@mantine/core';
+import { Box, Button, Container, Divider, Image, Text, Title } from '@mantine/core';
 import classes from './HaveIdeaSection.module.css';
 
 export function HaveIdeaSection() {
@@ -8,19 +9,19 @@ export function HaveIdeaSection() {
       <Divider my="lg" />
       <div className={classes.wrapper}>
         <div className={classes.body}>
-          <Title className={classes.title} component="p" size="h1">
+          <Title className={classes.title} order={3} component="p">
             Have an Idea?
           </Title>
-          <Text fw={500} fz="md" mb={5}>
+          <Text fz="md" mb={5} c="dimmed">
             Let us assist you! Our talented designers and agile developers can quickly transform
             your idea into reality with a fully functional proof of concept. Contact us to learn
             more.
           </Text>
-          <div className={classes.controls}>
-            <Button className={classes.control} variant="outline">
+          <Box mt="md">
+            <Button variant="outline" component={Link} href="/contact">
               Get in touch
             </Button>
-          </div>
+          </Box>
         </div>
         <Image src={Idea.src} className={classes.image} />
       </div>

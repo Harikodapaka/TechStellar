@@ -1,26 +1,9 @@
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
-import {
-  ActionIcon,
-  Button,
-  Group,
-  SimpleGrid,
-  Text,
-  Textarea,
-  TextInput,
-  Title,
-} from '@mantine/core';
+import { Button, Group, SimpleGrid, Text, Textarea, TextInput, Title } from '@mantine/core';
+import { SocialLinks } from '../SocialLinks/SocialLinks';
 import { ContactIconsList } from './ContactIcons';
 import classes from './ContactUs.module.css';
 
-const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
-
 export function ContactUs() {
-  const icons = social.map((Icon, index) => (
-    <ActionIcon key={index} size={28} className={classes.social} variant="transparent">
-      <Icon size={22} stroke={1.5} />
-    </ActionIcon>
-  ));
-
   return (
     <div className={classes.wrapper}>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
@@ -32,7 +15,9 @@ export function ContactUs() {
 
           <ContactIconsList />
 
-          <Group mt="xl">{icons}</Group>
+          <Group mt="xl">
+            <SocialLinks variant="transparent" className={classes.social} />
+          </Group>
         </div>
         <div className={classes.form}>
           <TextInput

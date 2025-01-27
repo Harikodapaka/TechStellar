@@ -1,9 +1,9 @@
 'use client';
 
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
-import { ActionIcon, Container, Group, Text } from '@mantine/core';
+import { Container, Group, Text } from '@mantine/core';
 import classes from '@/components/Footer/Footer.module.css';
 import { TsLogo } from '@/components/TsLogo/TsLogo';
+import { SocialLinks } from '../SocialLinks/SocialLinks';
 
 export function Footer() {
   return (
@@ -22,15 +22,7 @@ export function Footer() {
         </Text>
 
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandYoutube size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram size={18} stroke={1.5} />
-          </ActionIcon>
+          <SocialLinks variant="subtle" className={classes.social} />
         </Group>
       </Container>
     </footer>
