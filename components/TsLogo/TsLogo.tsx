@@ -10,7 +10,7 @@ export function TsLogo() {
       <Link href="/">
         <Image width={50} height={50} alt="TechStellar Logo" src={TSLogo} unoptimized />
       </Link>
-      <Title component="h1" order={5} w={100} className={classes.title}>
+      <Title component="h1" order={6} w={100} className={classes.title}>
         TechStellar Consulting
       </Title>
     </Flex>
