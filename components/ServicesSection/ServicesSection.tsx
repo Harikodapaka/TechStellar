@@ -66,7 +66,7 @@ export function ServicesSection() {
   return (
     <Container size="lg" py="xl" id="services">
       <Group justify="center">
-        <Badge variant="filled" size="lg">
+        <Badge variant="light" size="lg">
           Our Services
         </Badge>
       </Group>

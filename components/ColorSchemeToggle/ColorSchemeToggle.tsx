@@ -20,6 +20,7 @@ export function ColorSchemeToggle() {
       p={4}
       radius="md"
       color={computedColorScheme === 'light' ? undefined : 'white'}
+      suppressHydrationWarning
     >
       {icon}
     </ActionIcon>
