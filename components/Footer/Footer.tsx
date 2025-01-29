@@ -1,29 +1,71 @@
-'use client';
-
-import { Container, Group, Text } from '@mantine/core';
+import Link from 'next/link';
+import {
+  Anchor,
+  Box,
+  Card,
+  Container,
+  Divider,
+  Flex,
+  Group,
+  Stack,
+  Text,
+  Title,
+} from '@mantine/core';
 import classes from '@/components/Footer/Footer.module.css';
+import { officeAddresses } from '@/components/Footer/offices';
+import { SocialLinks } from '@/components/SocialLinks/SocialLinks';
 import { TsLogo } from '@/components/TsLogo/TsLogo';
-import { SocialLinks } from '../SocialLinks/SocialLinks';
 
 export function Footer() {
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner} size="xl">
-        <div className={classes.logo}>
-          <TsLogo />
-          <Text size="xs" c="dimmed" className={classes.description}>
-            Turning Ideas Into Impactful Solutions.
-          </Text>
-        </div>
+        <Stack>
+          <div className={classes.logo}>
+            <TsLogo />
+            <Text size="xs" fs="italic" className={classes.description}>
+              Turning Ideas Into Impactful Solutions.
+            </Text>
+          </div>
+          <Flex gap={10} direction="column" align={{ base: 'center', sm: 'start' }}>
+            <Text size="xs" fw="bold" className={classes.description}>
+              Follow us on
+            </Text>
+            <Box>
+              <SocialLinks variant="subtle" />
+            </Box>
+          </Flex>
+        </Stack>
+        <Stack display={{ base: 'none', sm: 'flex' }} gap={15}>
+          <Title order={6}>📍 Our Offices</Title>
+          <Group gap={10}>
+            {officeAddresses.map((office) => (
+              <Card padding="sm" radius="md" bg="none" maw="15rem" withBorder key={office.country}>
+                <Stack gap={10}>
+                  <Text fw="bold">{office.country}</Text>
+                  <Text fz="sm">{office.address}</Text>
+                </Stack>
+              </Card>
+            ))}
+          </Group>
+        </Stack>
       </Container>
+      <Divider size="xs" m="md" />
       <Container className={classes.afterFooter} size="xl">
-        <Text c="dimmed" size="sm">
-          © 2025 TechStellar Consulting Inc. All rights reserved.
-        </Text>
-
-        <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-          <SocialLinks variant="subtle" className={classes.social} />
-        </Group>
+        <Flex align="center" justify="space-between" direction={{ base: 'column', sm: 'row' }}>
+          <Text size="sm">
+            © {new Date().getFullYear()} TechStellar Consulting Inc. All rights reserved.
+          </Text>
+          <Group pr={{ base: 'none', sm: '40' }}>
+            <Anchor size="sm" component={Link} href="/">
+              Terms of use
+            </Anchor>
+            <Text c="dimmed">|</Text>
+            <Anchor size="sm" component={Link} href="/">
+              Privacy Policy
+            </Anchor>
+          </Group>
+        </Flex>
       </Container>
     </footer>
   );

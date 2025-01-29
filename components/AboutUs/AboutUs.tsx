@@ -69,7 +69,7 @@ export function AboutUs() {
       </div>
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="md" mt={10}>
         {values.map((value) => (
-          <Card shadow="sm" padding="lg" radius="md" withBorder>
+          <Card shadow="sm" padding="lg" radius="md" withBorder key={value.title}>
             <Group>
               <ThemeIcon size={36} radius="xl" variant="light">
                 <value.icon size={30} stroke={2} />
