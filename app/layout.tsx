@@ -13,7 +13,14 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: any }) {
   return (
-    <html lang="en" {...mantineHtmlProps} style={{ scrollBehavior: 'smooth', scrollbarColor: 'var(--mantine-color-tsRed-filled) transparent' }}>
+    <html
+      lang="en"
+      {...mantineHtmlProps}
+      style={{
+        scrollBehavior: 'smooth',
+        scrollbarColor: 'var(--mantine-color-tsRed-filled) transparent',
+      }}
+    >
       <head>
         <ColorSchemeScript defaultColorScheme="auto" />
         <link rel="shortcut icon" href="/favicon.svg" />

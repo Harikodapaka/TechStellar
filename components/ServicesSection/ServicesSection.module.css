@@ -1,32 +1,47 @@
 .title {
-    /* font-size: 34px; */
-    /* font-weight: 900; */
-  
-    @media (max-width: $mantine-breakpoint-sm) {
-      font-size: 24px;
-    }
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 24px;
   }
-  
-  .description {
-    max-width: rem(750px);
-    margin: auto;
-  }
-  
-  .card {
-    border: 1px solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
-  }
+}
 
-  .cardIcon {
-    color: light-dark(var(--mantine-color-tsRed-6), var(--mantine-color-dark-1));
+.description {
+  max-width: rem(750px);
+  margin: auto;
+}
+
+.card {
+  border: 1px solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: var(--mantine-shadow-md);
+  transition: all 0.2s ease-out;
+  background: var(--mantine-color-tsRed-outline-hover);
+  border: calc(0.0625rem * var(--mantine-scale)) solid var(--mantine-color-tsRed-outline);
+}
+
+.card:hover p {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white)) !important;
+}
+
+.card:hover svg {
+  transform: rotateY(180deg);
+  transition: all 0.2s ease-in;
+}
+
+.cardIcon {
+  color: light-dark(var(--mantine-color-tsRed-6), var(--mantine-color-dark-1));
+}
+
+.cardTitle {
+  &::after {
+    content: '';
+    display: block;
+    background-color: var(--mantine-color-tsRed-filled);
+    width: 45px;
+    height: 2px;
+    margin-top: var(--mantine-spacing-sm);
   }
-  
-  .cardTitle {
-    &::after {
-      content: '';
-      display: block;
-      background-color: var(--mantine-color-tsRed-filled);
-      width: 45px;
-      height: 2px;
-      margin-top: var(--mantine-spacing-sm);
-    }
-  }
+}
