@@ -17,14 +17,14 @@ export const metadata = {
     description: 'Turning Ideas Into Impactful Solutions.',
     url: 'https://techstellarconsulting.ca',
     siteName: 'TechStellar',
-    images: [{ url: '/techstellar-logo.png', width: 1200, height: 630 }],
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TechStellar Consulting Inc.',
     description: 'Turning Ideas Into Impactful Solutions.',
-    images: ['/techstellar-logo.png'],
+    images: ['/opengraph-image.png'],
   },
   icons: {
     icon: ['/favicon/favicon.ico'],
