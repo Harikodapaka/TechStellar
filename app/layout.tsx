@@ -6,7 +6,7 @@ import { AppLayout } from '@/components/AppLayout/AppLayout';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 import { theme } from '../theme';
 
-const baseURL = process.env.NEXT_PUBLIC_PUBLIC_URL || 'https://techstellarconsulting.ca'
+const baseURL = process.env.NEXT_PUBLIC_BASE_URL || 'https://techstellarconsulting.ca'
 export const metadata = {
   title: 'TechStellar',
   description:
