@@ -6,11 +6,12 @@ import { AppLayout } from '@/components/AppLayout/AppLayout';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 import { theme } from '../theme';
 
+const baseURL = process.env.NEXT_PUBLIC_PUBLIC_URL || 'https://techstellarconsulting.ca'
 export const metadata = {
   title: 'TechStellar',
   description:
     'TechStellar Consulting Inc - We provide end-to-end IT consulting services in US and Canada, ensuring seamless project planning and implementation.',
-  metadataBase: new URL('https://techstellarconsulting.ca'),
+  metadataBase: new URL(baseURL),
   openGraph: {
     title: 'TechStellar Consulting Inc.',
     description: 'Turning Ideas Into Impactful Solutions.',
