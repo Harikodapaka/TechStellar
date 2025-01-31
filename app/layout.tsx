@@ -7,8 +7,30 @@ import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 import { theme } from '../theme';
 
 export const metadata = {
-  title: 'TechStellar Consulting',
-  description: 'TechStellar Consulting Inc.',
+  title: 'TechStellar',
+  description:
+    'TechStellar Consulting Inc - We provide end-to-end IT consulting services in US and Canada, ensuring seamless project planning and implementation.',
+  metadataBase: new URL('https://techstellarconsulting.ca'),
+  openGraph: {
+    title: 'TechStellar Consulting Inc.',
+    description: 'Turning Ideas Into Impactful Solutions.',
+    url: 'https://techstellarconsulting.ca',
+    siteName: 'TechStellar',
+    images: [{ url: '/techstellar-logo.png', width: 1200, height: 630 }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'ts-image',
+    title: 'TechStellar Consulting Inc.',
+    description: 'Turning Ideas Into Impactful Solutions.',
+    images: ['/techstellar-logo.png'],
+  },
+  icons: {
+    icon: ['/favicon/favicon.ico'],
+    apple: ['/favicon/apple-touch-icon.png'],
+    shortcut: ['/favicon/apple-touch-icon.png'],
+  },
+  manifest: '/favicon/site.webmanifest',
 };
 
 export default function RootLayout({ children }: { children: any }) {
@@ -23,7 +45,6 @@ export default function RootLayout({ children }: { children: any }) {
     >
       <head>
         <ColorSchemeScript defaultColorScheme="auto" />
-        <link rel="shortcut icon" href="/favicon.svg" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"

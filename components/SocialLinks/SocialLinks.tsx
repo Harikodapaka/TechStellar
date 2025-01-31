@@ -17,6 +17,7 @@ export function SocialLinks({
       variant={variant}
       href={brand.link}
       target="_blank"
+      aria-label={`social-media-icon-${brand.name}`}
     >
       <brand.icon size={22} stroke={1.5} />
     </ActionIcon>

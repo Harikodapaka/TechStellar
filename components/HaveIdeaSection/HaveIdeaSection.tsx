@@ -23,7 +23,7 @@ export function HaveIdeaSection() {
             </Button>
           </Box>
         </div>
-        <Image src={Idea.src} className={classes.image} />
+        <Image src={Idea.src} alt="idea image" className={classes.image} />
       </div>
     </Container>
   );
