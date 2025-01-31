@@ -20,7 +20,7 @@ export const metadata = {
     type: 'website',
   },
   twitter: {
-    card: 'ts-image',
+    card: 'summary_large_image',
     title: 'TechStellar Consulting Inc.',
     description: 'Turning Ideas Into Impactful Solutions.',
     images: ['/techstellar-logo.png'],
