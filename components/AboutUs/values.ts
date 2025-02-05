@@ -8,7 +8,7 @@ export const values = [
   },
   {
     title: 'Our Mission',
-    text: "Our mission is simple: to turn your vision into reality by delivering innovative, reliable, and affordable IT solutions that drive business growth. We go beyond being a service provider—we strive to be a strategic technology partner in your success.",
+    text: 'Our mission is simple: to turn your vision into reality by delivering innovative, reliable, and affordable IT solutions that drive business growth. We go beyond being a service provider—we strive to be a strategic technology partner in your success.',
     icon: IconTargetArrow,
   },
   {

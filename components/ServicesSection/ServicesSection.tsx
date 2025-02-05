@@ -54,7 +54,7 @@ export function ServicesSection() {
   const features = mockdata.map((feature) => (
     <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
       <feature.icon size={50} stroke={2} className={classes.cardIcon} />
-      <Text component='h3' fz="lg" fw={500} className={classes.cardTitle} mt="md">
+      <Text component="h3" fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
       <Text fz="sm" c="dimmed" mt="sm">

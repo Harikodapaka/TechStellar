@@ -29,9 +29,12 @@ export function AboutUs() {
             The best IT solutions <span className={classes.highlight}>since 2022</span>
           </Title>
           <Text fz="md" mb={5} c="dimmed">
-            Since 2022, TechStellar has been a leading provider of innovative IT solutions, helping businesses thrive in a fast-evolving digital landscape. We specialize in custom IT consulting, cloud solutions, and digital transformation to drive measurable business growth.
+            Since 2022, TechStellar has been a leading provider of innovative IT solutions, helping
+            businesses thrive in a fast-evolving digital landscape. We specialize in custom IT
+            consulting, cloud solutions, and digital transformation to drive measurable business
+            growth.
           </Text>
-          <Title fz="md" order={3} size='h5' mt={6}>
+          <Title fz="md" order={3} size="h5" mt={6}>
             Why Businesses Trust TechStellar?
           </Title>
           <List
@@ -56,7 +59,8 @@ export function AboutUs() {
             </ListItem>
           </List>
           <Text fz="md" mb={5} c="dimmed">
-            With a reputation for excellence, trust, and customer success, TechStellar is your go-to IT consulting partner for future-proof technology solutions.
+            With a reputation for excellence, trust, and customer success, TechStellar is your go-to
+            IT consulting partner for future-proof technology solutions.
           </Text>
         </div>
       </div>
@@ -67,7 +71,7 @@ export function AboutUs() {
               <ThemeIcon size={36} radius="xl" variant="light">
                 <value.icon size={30} stroke={2} />
               </ThemeIcon>
-              <Title order={3} size='h5' my={10}>
+              <Title order={3} size="h5" my={10}>
                 {value.title}
               </Title>
             </Group>

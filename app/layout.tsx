@@ -1,17 +1,29 @@
 import '@mantine/core/styles.css';
 
 import React from 'react';
+import type { Metadata } from 'next';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { AppLayout } from '@/components/AppLayout/AppLayout';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 import { theme } from '../theme';
 
-const baseURL = process.env.NEXT_PUBLIC_BASE_URL || 'https://techstellarconsulting.ca'
-export const metadata = {
+const baseURL = process.env.NEXT_PUBLIC_BASE_URL || 'https://techstellarconsulting.ca';
+export const metadata: Metadata = {
   title: 'TechStellar Consulting & Digital Transformation Services',
   description:
     'TechStellar Consulting Inc - We provide end-to-end IT consulting services in US and Canada, ensuring seamless project planning and implementation.',
   metadataBase: new URL(baseURL),
+  authors: {
+    name: 'TechStellar Consulting Inc.',
+    url: new URL(baseURL),
+  },
+  keywords: [
+    'TechStellar',
+    'IT Consulting',
+    'TechStellar Consulting Inc.',
+    'Digital Transformation',
+    'IT Services',
+  ],
   openGraph: {
     title: 'TechStellar Consulting Inc.',
     description: 'Turning Ideas Into Impactful Solutions.',
