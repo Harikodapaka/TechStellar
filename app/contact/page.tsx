@@ -12,7 +12,7 @@ export default function ContactPage() {
         gap={{ base: 'sm', sm: 'lg' }}
       >
         <Box maw="800px">
-          <Title>Let's chat</Title>
+          <Title component='p'>Let's chat</Title>
           <Text c="dimmed">
             Have questions or ready to bring your ideas to life? We're here to help! Connect with us
             today and let's start creating something extraordinary together. Whether you’re seeking

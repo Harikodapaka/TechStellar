@@ -25,18 +25,15 @@ export function AboutUs() {
           <Badge variant="light" size="lg">
             About us
           </Badge>
-          <Title className={classes.title} order={3} my="sm">
+          <Title className={classes.title} order={2} my="sm">
             The best IT solutions <span className={classes.highlight}>since 2022</span>
           </Title>
           <Text fz="md" mb={5} c="dimmed">
-            Since our inception in 2022, TechStellar has been committed to delivering innovative and
-            reliable IT solutions that empower businesses to succeed in a rapidly changing digital
-            world. Over the years, we have partnered with organizations of all sizes, providing
-            tailored services that address their unique challenges and drive measurable results.
+            Since 2022, TechStellar has been a leading provider of innovative IT solutions, helping businesses thrive in a fast-evolving digital landscape. We specialize in custom IT consulting, cloud solutions, and digital transformation to drive measurable business growth.
           </Text>
-          <Text fz="md" c="dimmed">
-            Our journey is built on:
-          </Text>
+          <Title fz="md" order={3} size='h5' mt={6}>
+            Why Businesses Trust TechStellar?
+          </Title>
           <List
             my={20}
             spacing="sm"
@@ -49,21 +46,17 @@ export function AboutUs() {
             }
           >
             <ListItem>
-              <b>Expertise</b>: A team of seasoned professionals with a deep understanding of the IT
-              landscape.
+              <b>Expert IT Professionals</b>: Decades of experience in cutting-edge technology.
             </ListItem>
             <ListItem>
-              <b>Innovation</b>: Leveraging the latest technologies to create cutting-edge
-              solutions.
+              <b>Innovative Solutions</b>: Leveraging AI, cloud computing, and automation.
             </ListItem>
             <ListItem>
-              <b>Trust</b>: Building long-lasting relationships through exceptional service and
-              consistent results.
+              <b>Reliable & Scalable</b>: ailored strategies for startups and enterprises alike.
             </ListItem>
           </List>
           <Text fz="md" mb={5} c="dimmed">
-            With a strong foundation of excellence and customer-centricity, we’ve established
-            ourselves as a trusted name in IT consulting.
+            With a reputation for excellence, trust, and customer success, TechStellar is your go-to IT consulting partner for future-proof technology solutions.
           </Text>
         </div>
       </div>
@@ -74,7 +67,7 @@ export function AboutUs() {
               <ThemeIcon size={36} radius="xl" variant="light">
                 <value.icon size={30} stroke={2} />
               </ThemeIcon>
-              <Title order={5} my={10}>
+              <Title order={3} size='h5' my={10}>
                 {value.title}
               </Title>
             </Group>

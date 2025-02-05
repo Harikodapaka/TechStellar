@@ -49,7 +49,7 @@ export function HeaderMenu({ opened, toggle }: { opened: boolean; toggle: () => 
     <div className={classes.header}>
       <Container size="xl">
         <div className={classes.inner}>
-          <TsLogo />
+          <TsLogo isHeading/>
           <Group gap={5} visibleFrom="sm">
             {items}
           </Group>

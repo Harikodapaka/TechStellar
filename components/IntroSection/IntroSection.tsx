@@ -24,7 +24,7 @@ export function IntroSection() {
     <Container size="xl">
       <div className={classes.inner}>
         <div className={classes.content}>
-          <h2 className={classes.title}>
+          <p className={classes.title}>
             Welcome to{' '}
             <Text
               inherit
@@ -34,7 +34,7 @@ export function IntroSection() {
             >
               TechStellar
             </Text>
-          </h2>
+          </p>
           <Text c="dimmed" mt="md">
             We provide end-to-end IT consulting services in US and Canada, ensuring seamless project
             planning and implementation. Our consultants work with developers, network specialists,

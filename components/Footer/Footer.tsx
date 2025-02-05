@@ -37,12 +37,12 @@ export function Footer() {
           </Flex>
         </Stack>
         <Stack display={{ base: 'none', sm: 'flex' }} gap={15}>
-          <Title order={6}>📍 Our Offices</Title>
+          <Title order={2} size='h6'>📍 Our Offices</Title>
           <Group gap={10}>
             {officeAddresses.map((office) => (
               <Card padding="sm" radius="md" bg="none" maw="15rem" withBorder key={office.country}>
                 <Stack gap={10}>
-                  <Text fw="bold">{office.country}</Text>
+                  <Text fw="bold" component='h3'>{office.country}</Text>
                   <Text fz="sm">{office.address}</Text>
                 </Stack>
               </Card>

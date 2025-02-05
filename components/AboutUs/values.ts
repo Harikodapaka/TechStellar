@@ -8,12 +8,12 @@ export const values = [
   },
   {
     title: 'Our Mission',
-    text: "Our mission is to deliver innovative, reliable, and cost-effective IT solutions, empowering your business to thrive. We're not just a service provider—we're your long-term partner in success.",
+    text: "Our mission is simple: to turn your vision into reality by delivering innovative, reliable, and affordable IT solutions that drive business growth. We go beyond being a service provider—we strive to be a strategic technology partner in your success.",
     icon: IconTargetArrow,
   },
   {
     title: 'Who We Are ',
-    text: 'Based in Kitchener-Waterloo, TechStellar empowers businesses through technology. Our team of experts helps startups and enterprises navigate the digital landscape with confidence and clarity.',
+    text: 'TechStellar is a Kitchener-Waterloo (KW)-based IT consulting startup specializing in cutting-edge technology solutions that empower businesses. Our team of experienced developers and consultants are dedicated to solving complex challenges with scalable, efficient, and cost-effective digital solutions.',
     icon: IconBuildingSkyscraper,
   },
 ];
