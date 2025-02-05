@@ -8,7 +8,7 @@ import { theme } from '../theme';
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_URL || 'https://techstellarconsulting.ca'
 export const metadata = {
-  title: 'TechStellar Consulting',
+  title: 'TechStellar Consulting & Digital Transformation Services',
   description:
     'TechStellar Consulting Inc - We provide end-to-end IT consulting services in US and Canada, ensuring seamless project planning and implementation.',
   metadataBase: new URL(baseURL),
