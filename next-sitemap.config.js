@@ -3,4 +3,16 @@ module.exports = {
     generateRobotsTxt: true,
     sitemapSize: 5000,
     generateIndexSitemap: false,
+    robotsTxtOptions: {
+        policies: [
+            {
+                userAgent: '*',
+                allow: '/',
+            },
+            {
+                userAgent: 'black-listed-bot',
+                disallow: ['/sitemap.rss', '/rss.xml'],
+            },
+        ]
+    },
 }

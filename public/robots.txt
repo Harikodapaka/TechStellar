@@ -2,6 +2,11 @@
 User-agent: *
 Allow: /
 
+# black-listed-bot
+User-agent: black-listed-bot
+Disallow: /sitemap.rss
+Disallow: /rss.xml
+
 # Host
 Host: https://techstellarconsulting.ca
 

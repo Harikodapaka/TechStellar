@@ -61,12 +61,12 @@ export function Footer() {
             © {new Date().getFullYear()} TechStellar Consulting Inc. All rights reserved.
           </Text>
           <Group pr={{ base: 'none', sm: '40' }}>
-            <Anchor size="sm" component={Link} href="/">
+            <Anchor size="sm" component={Link} href="/terms">
               Terms of use
             </Anchor>
             <Text c="dimmed">|</Text>
-            <Anchor size="sm" component={Link} href="/">
-              Privacy Policy
+            <Anchor size="sm" component={Link} href="/privacy">
+              Privacy policy
             </Anchor>
           </Group>
         </Flex>
