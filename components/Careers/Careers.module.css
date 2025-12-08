@@ -1,0 +1,11 @@
+.jobTitle {
+    margin: 0;
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+}
+
+.applyRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}

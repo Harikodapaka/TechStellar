@@ -1,5 +1,5 @@
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
-import { Icon, IconHome2, IconProps, IconUserSquareRounded } from '@tabler/icons-react';
+import { Icon, IconBriefcase, IconHome2, IconProps, IconUserSquareRounded } from '@tabler/icons-react';
 
 export interface NavLink {
   link: string;
@@ -11,7 +11,7 @@ export const links: NavLink[] = [
   { link: '/', label: 'Home', icon: IconHome2 },
   // { link: '/#services', label: 'Services', icon: IconDeviceImacCog },
   { link: '/contact', label: 'Contact', icon: IconUserSquareRounded },
-  // { link: '/careers', label: 'Careers', icon: IconBriefcase },
+  { link: '/careers', label: 'Careers', icon: IconBriefcase },
   // {
   //   link: '#1',
   //   label: 'Account',

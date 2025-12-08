@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: calc(var(--mantine-spacing-lg) * 2) 0;
-    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
+    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
   
     @media (max-width: $mantine-breakpoint-sm) {
       flex-direction: column-reverse;
