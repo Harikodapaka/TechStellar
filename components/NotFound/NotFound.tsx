@@ -6,7 +6,7 @@ export function NotFound() {
   return (
     <Container className={classes.root}>
       <SimpleGrid spacing={{ base: 40, sm: 80 }} cols={{ base: 1, sm: 2 }}>
-        <Image src='/404.svg' alt="404 Not Found" className={classes.mobileImage} />
+        <Image src="/404.svg" alt="404 Not Found" className={classes.mobileImage} />
         <div>
           <Title className={classes.title}>Something is not right...</Title>
           <Text c="dimmed" size="lg">
@@ -25,7 +25,7 @@ export function NotFound() {
             </Button>
           </Link>
         </div>
-        <Image src='/404.svg' alt="404 Not Found" className={classes.desktopImage} />
+        <Image src="/404.svg" alt="404 Not Found" className={classes.desktopImage} />
       </SimpleGrid>
     </Container>
   );
