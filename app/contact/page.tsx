@@ -1,4 +1,3 @@
-import MeetingSvg from '/public/meeting.svg';
 import { Box, Container, Flex, Image, Text, Title } from '@mantine/core';
 import { ContactUs } from '@/components/ContactUs/ContactUs';
 
@@ -23,7 +22,7 @@ export default function ContactPage() {
         <Image
           h={{ base: 350, md: 500 }}
           w={{ base: 350, md: 'auto' }}
-          src={MeetingSvg.src}
+          src='/meeting.svg'
           alt="contact image"
         />
       </Flex>

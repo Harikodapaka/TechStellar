@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Idea from '/public/idea.svg';
 import { Box, Button, Container, Divider, Image, Text, Title } from '@mantine/core';
 import classes from './HaveIdeaSection.module.css';
 
@@ -18,12 +17,14 @@ export function HaveIdeaSection() {
             more.
           </Text>
           <Box mt="md">
-            <Button variant="outline" component={Link} href="/contact">
-              Get in touch
-            </Button>
+            <Link href="/contact" passHref>
+              <Button variant="outline" component='span'>
+                Get in touch
+              </Button>
+            </Link>
           </Box>
         </div>
-        <Image src={Idea.src} alt="idea image" className={classes.image} />
+        <Image src='/idea.svg' alt="idea image" className={classes.image} />
       </div>
     </Container>
   );
