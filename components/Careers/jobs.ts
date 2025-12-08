@@ -1,6 +1,6 @@
 const jobs = [
   {
-    id: 'frontend-engineer',
+    id: 'frontend-engineer-canada',
     title: 'Frontend Engineer',
     location: 'Remote (Canada)',
     type: 'Full-time',
