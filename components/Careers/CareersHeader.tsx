@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Title, Text, Button, Flex, Box, Image } from '@mantine/core';
-import JoinUsSvg from '/public/joinUs.svg';
 
 export default function CareersHeader() {
     return (
@@ -53,7 +52,7 @@ export default function CareersHeader() {
             <Image
                 h={{ base: 350, md: 500 }}
                 w={{ base: 350, md: 'auto' }}
-                src={JoinUsSvg.src}
+                src='/joinUs.svg'
                 alt="careers image"
                 display={{ base: 'none', md: 'block' }}
             />
