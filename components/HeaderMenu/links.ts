@@ -2,6 +2,7 @@ import { ForwardRefExoticComponent, RefAttributes } from 'react';
 import {
   Icon,
   IconBriefcase,
+  IconDeviceImacCog,
   IconHome2,
   IconProps,
   IconUserSquareRounded,
@@ -15,9 +16,9 @@ export interface NavLink {
 }
 export const links: NavLink[] = [
   { link: '/', label: 'Home', icon: IconHome2 },
-  // { link: '/#services', label: 'Services', icon: IconDeviceImacCog },
-  { link: '/contact', label: 'Contact', icon: IconUserSquareRounded },
+  { link: '/services', label: 'Services', icon: IconDeviceImacCog },
   { link: '/careers', label: 'Careers', icon: IconBriefcase },
+  { link: '/contact', label: 'Contact', icon: IconUserSquareRounded },
   // {
   //   link: '#1',
   //   label: 'Account',

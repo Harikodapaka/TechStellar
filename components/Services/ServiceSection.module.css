@@ -1,0 +1,36 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+/* On medium+ screens lay out as row */
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* reverse class used to swap order on desktop only */
+  .rowReverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.text {
+  flex: 1 1 50%;
+}
+
+.visual {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visualPlaceholder {
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f7fbff, #fff);
+}
