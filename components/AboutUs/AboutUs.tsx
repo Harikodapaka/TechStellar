@@ -19,7 +19,7 @@ export function AboutUs() {
   return (
     <Container size="xl" py="xl" id="services">
       <div className={classes.wrapper}>
-        <Image src='/team.svg' className={classes.image} alt="team image" />
+        <Image src="/team.svg" className={classes.image} alt="team image" />
         <div className={classes.body}>
           <Badge variant="light" size="lg">
             About us

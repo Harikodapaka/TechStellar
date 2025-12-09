@@ -70,7 +70,7 @@ export function IntroSection() {
             </Button>
             <Link href="/contact" passHref>
               <Button
-                component='span'
+                component="span"
                 variant="default"
                 radius="xl"
                 size="md"

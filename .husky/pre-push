@@ -1,0 +1,2 @@
+# Run full test suite before allowing a push
+npm test

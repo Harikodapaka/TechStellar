@@ -1,6 +1,8 @@
-import { render as testingLibraryRender } from '@testing-library/react';
+import { fireEvent, screen, render as testingLibraryRender } from '@testing-library/react';
 import { MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
+
+export { screen, fireEvent };
 
 export function render(ui: React.ReactNode) {
   return testingLibraryRender(<>{ui}</>, {

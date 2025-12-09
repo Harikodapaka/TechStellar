@@ -1,5 +1,11 @@
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
-import { Icon, IconBriefcase, IconHome2, IconProps, IconUserSquareRounded } from '@tabler/icons-react';
+import {
+  Icon,
+  IconBriefcase,
+  IconHome2,
+  IconProps,
+  IconUserSquareRounded,
+} from '@tabler/icons-react';
 
 export interface NavLink {
   link: string;

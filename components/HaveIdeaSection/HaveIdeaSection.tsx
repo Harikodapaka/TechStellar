@@ -18,13 +18,13 @@ export function HaveIdeaSection() {
           </Text>
           <Box mt="md">
             <Link href="/contact" passHref>
-              <Button variant="outline" component='span'>
+              <Button variant="outline" component="span">
                 Get in touch
               </Button>
             </Link>
           </Box>
         </div>
-        <Image src='/idea.svg' alt="idea image" className={classes.image} />
+        <Image src="/idea.svg" alt="idea image" className={classes.image} />
       </div>
     </Container>
   );
