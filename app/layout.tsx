@@ -2,6 +2,7 @@ import '@mantine/core/styles.css';
 
 import React from 'react';
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { AppLayout } from '@/components/AppLayout/AppLayout';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
@@ -65,7 +66,10 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body suppressHydrationWarning>
         <MantineProvider theme={theme} defaultColorScheme="auto">
-          <AppLayout>{children}</AppLayout>
+          <AppLayout>
+            {children}
+            <Analytics />
+          </AppLayout>
           <ScrollToTop />
         </MantineProvider>
       </body>
