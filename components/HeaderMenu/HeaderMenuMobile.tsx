@@ -27,8 +27,14 @@ export function HeaderMenuMobile({ toggle }: { toggle: () => void }) {
         <NavLink
           key={link.label}
           href="#"
-          label="First parent link"
-          leftSection={<IconListDetails size={24} stroke={1.5} />}
+          label={link.label}
+          leftSection={
+            link.icon ? (
+              <link.icon size={24} stroke={1.5} />
+            ) : (
+              <IconListDetails size={24} stroke={1.5} />
+            )
+          }
           childrenOffset={28}
         >
           {subMenuItems}

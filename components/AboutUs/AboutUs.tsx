@@ -17,9 +17,13 @@ import { values } from './values';
 
 export function AboutUs() {
   return (
-    <Container size="xl" py="xl" id="services">
+    <Container size="xl" py="xl" id="about-us">
       <div className={classes.wrapper}>
-        <Image src="/team.svg" className={classes.image} alt="team image" />
+        <Image
+          src="/team.svg"
+          className={classes.image}
+          alt="TechStellar consulting team collaborating"
+        />
         <div className={classes.body}>
           <Badge variant="light" size="lg">
             About us
@@ -54,7 +58,7 @@ export function AboutUs() {
               <b>Innovative Solutions</b>: Leveraging AI, cloud computing, and automation.
             </ListItem>
             <ListItem>
-              <b>Reliable & Scalable</b>: ailored strategies for startups and enterprises alike.
+              <b>Reliable & Scalable</b>: Tailored strategies for startups and enterprises alike.
             </ListItem>
           </List>
           <Text fz="md" mb={5} c="dimmed">

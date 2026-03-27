@@ -12,7 +12,7 @@ export default function CareersHeader() {
       gap={{ base: 'sm', sm: 'lg' }}
     >
       <Box maw="800px" mt={{ base: 0, md: 'lg' }}>
-        <Title component="p" order={2} size="h3">
+        <Title order={1} size="h3">
           Join the Team at <strong>TechStellar</strong>
         </Title>
         <Text c="dimmed" mt="md">
@@ -50,7 +50,7 @@ export default function CareersHeader() {
         h={{ base: 350, md: 500 }}
         w={{ base: 350, md: 'auto' }}
         src="/joinUs.svg"
-        alt="careers image"
+        alt="Professionals joining TechStellar careers team"
         display={{ base: 'none', md: 'block' }}
       />
     </Flex>

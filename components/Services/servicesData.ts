@@ -19,15 +19,15 @@ const services: ServiceSectionProps[] = [
   {
     title: 'Offshore Development Services',
     paragraphs: [
-      'The Techstellar Offshore Development Services model enables you to scale up your team in accordance with your demands and specifications, increasing your agility and positioning you for rapid expansion.',
+      'The TechStellar Offshore Development Services model enables you to scale up your team in accordance with your demands and specifications, increasing your agility and positioning you for rapid expansion.',
       'The notion of an offshore development center (ODC) is new in the context of global business principles. With the use of offshore development services, business owners may employ teams from around the globe to do tasks without having to station them in their own nation, cutting expenses.',
     ],
     bullets: [
-      'Reduces the cost.',
-      'Increased Efficiency and Reliability.',
-      'Saves time with faster solutions & multitasking.',
-      'Skilled and Diverse Talent Pool.',
-      'Access to Established Infrastructure.',
+      'Reduces the cost',
+      'Increased efficiency and reliability',
+      'Saves time with faster solutions & multitasking',
+      'Skilled and diverse talent pool',
+      'Access to established infrastructure',
     ],
     image: '/images/services/offshore.svg',
     reverseOnDesktop: true,
@@ -35,12 +35,12 @@ const services: ServiceSectionProps[] = [
   {
     title: 'IT Staff Augmentation',
     paragraphs: [
-      'Techstellar provides top-notch IT Staff Augmentation Services that provide vital skill sets for your business or IT goals, helping to close the skills gap between demand and supply while adding skilled developers to your team.',
+      'TechStellar provides top-notch IT Staff Augmentation Services that provide vital skill sets for your business or IT goals, helping to close the skills gap between demand and supply while adding skilled developers to your team.',
     ],
     bullets: [
-      'Collaborative End-to-end Solutions.',
-      'Excellent Execution and Delivery.',
-      'Cost-effective Partnership Model.',
+      'Collaborative end-to-end solutions',
+      'Excellent execution and delivery',
+      'Cost-effective partnership model',
     ],
     image: '/images/services/it-staff.svg',
     reverseOnDesktop: false,
@@ -48,7 +48,7 @@ const services: ServiceSectionProps[] = [
   {
     title: 'Cloud-Native & DevOps Services',
     paragraphs: [
-      'Transform your software delivery with Techstellar’s DevOps and cloud services. We help you streamline infrastructure, automate workflows, and accelerate releases.',
+      'Transform your software delivery with TechStellar’s DevOps and cloud services. We help you streamline infrastructure, automate workflows, and accelerate releases.',
     ],
     bullets: [
       'Containerization, frameworks & modern languages',
@@ -63,7 +63,7 @@ const services: ServiceSectionProps[] = [
   {
     title: 'AI & Machine Learning',
     paragraphs: [
-      'From data annotation to workflow automation, Techstellar helps you build AI/ML solutions that streamline operations and unlock new opportunities.',
+      'From data annotation to workflow automation, TechStellar helps you build AI/ML solutions that streamline operations and unlock new opportunities.',
     ],
     bullets: [
       'AI/ML model development & deployment',
@@ -78,7 +78,7 @@ const services: ServiceSectionProps[] = [
   {
     title: 'Big Data & Data Science',
     paragraphs: [
-      'Techstellar helps you modernize, analyze, and leverage your data to gain a competitive edge. We support the full data lifecycle—from exploration to deployment.',
+      'TechStellar helps you modernize, analyze, and leverage your data to gain a competitive edge. We support the full data lifecycle—from exploration to deployment.',
     ],
     bullets: [
       'Data engineering & pipeline development',

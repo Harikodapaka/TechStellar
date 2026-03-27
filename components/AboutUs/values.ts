@@ -12,7 +12,7 @@ export const values = [
     icon: IconTargetArrow,
   },
   {
-    title: 'Who We Are ',
+    title: 'Who We Are',
     text: 'TechStellar is a Kitchener-Waterloo (KW)-based IT consulting startup specializing in cutting-edge technology solutions that empower businesses. Our team of experienced developers and consultants are dedicated to solving complex challenges with scalable, efficient, and cost-effective digital solutions.',
     icon: IconBuildingSkyscraper,
   },

@@ -25,7 +25,7 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
   );
 }
 
-const MOCKDATA = [
+const CONTACT_DATA = [
   { title: 'Email', description: 'info@techstellarconsulting.ca', icon: IconAt },
   { title: 'Phone', description: '+1 519-721-1259', icon: IconPhone },
   {
@@ -37,6 +37,6 @@ const MOCKDATA = [
 ];
 
 export function ContactIconsList() {
-  const items = MOCKDATA.map((item, index) => <ContactIcon key={index} {...item} />);
+  const items = CONTACT_DATA.map((item) => <ContactIcon key={item.title} {...item} />);
   return <Stack>{items}</Stack>;
 }

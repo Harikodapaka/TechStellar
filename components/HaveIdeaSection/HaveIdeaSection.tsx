@@ -24,7 +24,11 @@ export function HaveIdeaSection() {
             </Link>
           </Box>
         </div>
-        <Image src="/idea.svg" alt="idea image" className={classes.image} />
+        <Image
+          src="/idea.svg"
+          alt="Illustration of turning ideas into reality"
+          className={classes.image}
+        />
       </div>
     </Container>
   );
