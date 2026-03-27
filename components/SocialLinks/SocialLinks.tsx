@@ -8,16 +8,17 @@ export function SocialLinks({
   variant?: string;
   className?: string;
 }) {
-  const icons = socialLinks.map((brand, index) => (
+  const icons = socialLinks.map((brand) => (
     <ActionIcon
       component="a"
-      key={index}
+      key={brand.name}
       size={28}
       className={className}
       variant={variant}
       href={brand.link}
       target="_blank"
-      aria-label={`social-media-icon-${brand.name}`}
+      rel="noopener noreferrer"
+      aria-label={`Visit TechStellar on ${brand.name}`}
     >
       <brand.icon size={22} stroke={1.5} />
     </ActionIcon>

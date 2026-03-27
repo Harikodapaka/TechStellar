@@ -3,6 +3,7 @@ import '@mantine/core/styles.css';
 import React from 'react';
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { AppLayout } from '@/components/AppLayout/AppLayout';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
   manifest: '/favicon/site.webmanifest',
 };
 
-export default function RootLayout({ children }: { children: any }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: { children: any }) {
           <AppLayout>
             {children}
             <Analytics />
+            <SpeedInsights />
           </AppLayout>
           <ScrollToTop />
         </MantineProvider>

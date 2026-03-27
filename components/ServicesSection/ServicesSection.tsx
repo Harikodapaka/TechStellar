@@ -72,14 +72,15 @@ export function ServicesSection() {
       </Group>
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        What We're Offering?
+        What We Offer
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
         We offer a comprehensive range of IT consulting services designed to meet the unique needs
         of businesses across various industries. At TechStellar, we are committed to helping your
-        business leverage technology to achieve strategic objectives. Whether you're looking to
-        optimize, our team is here to guide you every step of the way.
+        business leverage technology to achieve strategic objectives. Whether you&apos;re looking to
+        optimize your operations, modernize your infrastructure, or scale your team, we are here to
+        guide you every step of the way.
       </Text>
 
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>

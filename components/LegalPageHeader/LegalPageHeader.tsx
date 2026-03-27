@@ -1,11 +1,12 @@
 import ReactMarkdown from 'react-markdown';
 import { Container, Image, Text, Title } from '@mantine/core';
+import { ContentfulImage } from '@/app/lib/getLegalPage';
 import classes from './LegalPageHeader.module.css';
 
 type LegalPageHeaderProps = {
   title: string;
-  image: any;
-  description: any;
+  image: ContentfulImage;
+  description: string;
 };
 
 export function LegalPageHeader({ title, description, image }: LegalPageHeaderProps) {
@@ -20,7 +21,7 @@ export function LegalPageHeader({ title, description, image }: LegalPageHeaderPr
             <ReactMarkdown>{description}</ReactMarkdown>
           </Text>
         </div>
-        <Image src={image.url} alt="idea image" className={classes.image} />
+        <Image src={image.url} alt={image.title || title} className={classes.image} />
       </div>
     </Container>
   );

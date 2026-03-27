@@ -23,7 +23,7 @@ export default function ContactPage() {
           h={{ base: 350, md: 500 }}
           w={{ base: 350, md: 'auto' }}
           src="/meeting.svg"
-          alt="contact image"
+          alt="Business meeting illustration"
         />
       </Flex>
       <ContactUs />

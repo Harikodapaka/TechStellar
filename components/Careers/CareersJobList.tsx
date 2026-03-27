@@ -49,8 +49,8 @@ export default function CareersJobList({ jobs }: CareersJobListProps) {
               <div>
                 <Text fw={600}>Responsibilities</Text>
                 <ul>
-                  {job.responsibilities.map((r, i) => (
-                    <li key={i}>
+                  {job.responsibilities.map((r) => (
+                    <li key={r}>
                       <Text component="span">{r}</Text>
                     </li>
                   ))}
@@ -60,8 +60,8 @@ export default function CareersJobList({ jobs }: CareersJobListProps) {
               <div>
                 <Text fw={600}>Qualifications</Text>
                 <ul>
-                  {job.qualifications.map((q, i) => (
-                    <li key={i}>
+                  {job.qualifications.map((q) => (
+                    <li key={q}>
                       <Text component="span">{q}</Text>
                     </li>
                   ))}
@@ -75,6 +75,7 @@ export default function CareersJobList({ jobs }: CareersJobListProps) {
                     job.title
                   )}`}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Apply
                 </Button>

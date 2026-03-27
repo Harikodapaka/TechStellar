@@ -15,7 +15,7 @@ const jobs = [
       'Familiarity with Next.js App Router',
       'TypeScript and testing experience',
     ],
-    posted: '2025-12-07',
+    posted: '2026-03-15',
   },
   {
     id: 'fullstack-engineer',
@@ -33,7 +33,7 @@ const jobs = [
       'Comfortable with GraphQL and REST',
       'Strong TypeScript skills',
     ],
-    posted: '2025-12-07',
+    posted: '2026-03-15',
   },
   {
     id: 'backend-engineer',
@@ -53,7 +53,7 @@ const jobs = [
       'Experience with databases (PostgreSQL, MongoDB)',
       'Understanding of system design principles',
     ],
-    posted: '2025-12-05',
+    posted: '2026-03-10',
   },
   {
     id: 'product-manager',
@@ -73,7 +73,7 @@ const jobs = [
       'Strong communication and analytical skills',
       'Familiarity with agile development',
     ],
-    posted: '2025-12-06',
+    posted: '2026-03-12',
   },
   {
     id: 'devops-engineer',
@@ -93,7 +93,7 @@ const jobs = [
       'Experience with AWS or GCP',
       'Scripting skills (Bash, Python, Go)',
     ],
-    posted: '2025-12-04',
+    posted: '2026-03-08',
   },
   {
     id: 'ui-designer',
@@ -113,7 +113,7 @@ const jobs = [
       'Portfolio showcasing design work',
       'Understanding of responsive design principles',
     ],
-    posted: '2025-12-07',
+    posted: '2026-03-15',
   },
   {
     id: 'qa-engineer',
@@ -133,7 +133,7 @@ const jobs = [
       'Strong attention to detail',
       'Understanding of web application technologies',
     ],
-    posted: '2025-12-03',
+    posted: '2026-03-05',
   },
   {
     id: 'data-analyst',
@@ -153,7 +153,7 @@ const jobs = [
       'Experience with data visualization tools (Tableau, Power BI)',
       'Strong statistical knowledge',
     ],
-    posted: '2025-12-02',
+    posted: '2026-03-01',
   },
 ];
 

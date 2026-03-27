@@ -2273,6 +2273,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@contentful/rich-text-types@npm:^17.2.5":
+  version: 17.2.5
+  resolution: "@contentful/rich-text-types@npm:17.2.5"
+  dependencies:
+    "@lingui/core": "npm:^5.4.1"
+    is-plain-obj: "npm:^3.0.0"
+  checksum: 10c0/943c4cb2c48a65ed69af5c6b6c7304e682cf90c67a3fda9afee9e6a41b5c8657592ad5ccfa3f2171e67d1a65003bc96925e7a3ce781411b072be5cbd4c867140
+  languageName: node
+  linkType: hard
+
 "@corex/deepmerge@npm:^4.0.43":
   version: 4.0.43
   resolution: "@corex/deepmerge@npm:4.0.43"
@@ -3341,6 +3351,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lingui/core@npm:^5.4.1":
+  version: 5.9.4
+  resolution: "@lingui/core@npm:5.9.4"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+    "@lingui/message-utils": "npm:5.9.4"
+  peerDependencies:
+    "@lingui/babel-plugin-lingui-macro": 5.9.4
+    babel-plugin-macros: 2 || 3
+  peerDependenciesMeta:
+    "@lingui/babel-plugin-lingui-macro":
+      optional: true
+    babel-plugin-macros:
+      optional: true
+  checksum: 10c0/166f4dc7d119c9e61d1655ef4f4808c1a6b0cae09c8485af1f33011611a7133bdc02b3f787bb56c61416229d29f49cc1398eb4351ccae18afc8724494e72cede
+  languageName: node
+  linkType: hard
+
+"@lingui/message-utils@npm:5.9.4":
+  version: 5.9.4
+  resolution: "@lingui/message-utils@npm:5.9.4"
+  dependencies:
+    "@messageformat/parser": "npm:^5.0.0"
+    js-sha256: "npm:^0.10.1"
+  checksum: 10c0/24d73febbca941e097507bf22962c2b08fb8f2c8cc7e0da74b660dcad072e63b8e5158bf9da6fda909655bd69152809107213747c58163e10994486489617e68
+  languageName: node
+  linkType: hard
+
 "@mantine/core@npm:7.16.1":
   version: 7.16.1
   resolution: "@mantine/core@npm:7.16.1"
@@ -3359,12 +3397,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mantine/form@npm:^8.3.18":
+  version: 8.3.18
+  resolution: "@mantine/form@npm:8.3.18"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+    klona: "npm:^2.0.6"
+  peerDependencies:
+    react: ^18.x || ^19.x
+  checksum: 10c0/ca920a1a2cc00abb28988e168661f18c53b7f5f81cb5f697eddda88c1207d3f56598cceb12aa49977c123c92d9f307b31e9c3d0086428df69eb6ed78a9b6a88b
+  languageName: node
+  linkType: hard
+
 "@mantine/hooks@npm:7.16.1":
   version: 7.16.1
   resolution: "@mantine/hooks@npm:7.16.1"
   peerDependencies:
     react: ^18.x || ^19.x
   checksum: 10c0/18ddda65ae017c3645b3ef3620bf3105d640cee6f80d50f1499f8efda30b6b0eb9b7b2e1ef54f4a204f50935c9b1a07741fbd6c9881641730a2fe948e6c46ed4
+  languageName: node
+  linkType: hard
+
+"@messageformat/parser@npm:^5.0.0":
+  version: 5.1.1
+  resolution: "@messageformat/parser@npm:5.1.1"
+  dependencies:
+    moo: "npm:^0.5.1"
+  checksum: 10c0/fc24596d85a20fa9959a0a1c34f9bfd341e4f6eb235d0648e54296e0bed2ebe91d067c7b91036aea8cc2e4af4ddb0722257b0c04f3c610cd9c7ef4f7659d8668
   languageName: node
   linkType: hard
 
@@ -4876,6 +4935,36 @@ __metadata:
     vue-router:
       optional: true
   checksum: 10c0/df39ec419299b43350ad80a06fe835502f22f71c32d21d58855ac39ef352d3478b8922e44375dbc5b0c02ceae04a9d23b32579eb517a602656f6460c90f5802a
+  languageName: node
+  linkType: hard
+
+"@vercel/speed-insights@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@vercel/speed-insights@npm:2.0.0"
+  peerDependencies:
+    "@sveltejs/kit": ^1 || ^2
+    next: ">= 13"
+    nuxt: ">= 3"
+    react: ^18 || ^19 || ^19.0.0-rc
+    svelte: ">= 4"
+    vue: ^3
+    vue-router: ^4
+  peerDependenciesMeta:
+    "@sveltejs/kit":
+      optional: true
+    next:
+      optional: true
+    nuxt:
+      optional: true
+    react:
+      optional: true
+    svelte:
+      optional: true
+    vue:
+      optional: true
+    vue-router:
+      optional: true
+  checksum: 10c0/a8703abcf72f6317183be13a5e991883589c48a8107fedb47d075af08e2d5a71d93e22c1927c8d0c28a69bb0e4712e90386d50947851883b6169c715cd43b4eb
   languageName: node
   linkType: hard
 
@@ -10612,6 +10701,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-sha256@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "js-sha256@npm:0.10.1"
+  checksum: 10c0/c63119f7c7f8afc24bfa24c1a6b51147c3b562316b6341a375a1cef88569340ec0dbf2cda429ecf472cabfbae47a0b93a0cb82b8730883de066593c3f816c53b
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -10815,6 +10911,13 @@ __metadata:
   version: 3.0.3
   resolution: "kleur@npm:3.0.3"
   checksum: 10c0/cd3a0b8878e7d6d3799e54340efe3591ca787d9f95f109f28129bdd2915e37807bf8918bb295ab86afb8c82196beec5a1adcaf29042ce3f2bd932b038fe3aa4b
+  languageName: node
+  linkType: hard
+
+"klona@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "klona@npm:2.0.6"
+  checksum: 10c0/94eed2c6c2ce99f409df9186a96340558897b3e62a85afdc1ee39103954d2ebe1c1c4e9fe2b0952771771fa96d70055ede8b27962a7021406374fdb695fd4d01
   languageName: node
   linkType: hard
 
@@ -11800,6 +11903,13 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: 10c0/46ea0f3ffa8bc6a5bc0c7081ffc3907777f0ed6516888d40a518c5111f8366d97d2678911ad1a6882bf592fa9de6c784fea32e1687bb94e1f4944170af48a5cf
+  languageName: node
+  linkType: hard
+
+"moo@npm:^0.5.1":
+  version: 0.5.3
+  resolution: "moo@npm:0.5.3"
+  checksum: 10c0/5c5e00d7c57a69ce1cc2f21a90655ff10556481cc10fa70528c01e91f00deff8a65fa8da6dc7b27d136d66085055aab238fd1b19a75070263e0028e8f07c8213
   languageName: node
   linkType: hard
 
@@ -15016,9 +15126,11 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.26.0"
     "@contentful/rich-text-react-renderer": "npm:^16.0.1"
+    "@contentful/rich-text-types": "npm:^17.2.5"
     "@eslint/js": "npm:^9.18.0"
     "@ianvs/prettier-plugin-sort-imports": "npm:^4.4.1"
     "@mantine/core": "npm:7.16.1"
+    "@mantine/form": "npm:^8.3.18"
     "@mantine/hooks": "npm:7.16.1"
     "@next/bundle-analyzer": "npm:^16.0.7"
     "@storybook/nextjs": "npm:^10.1.4"
@@ -15033,6 +15145,7 @@ __metadata:
     "@types/node": "npm:^22.10.7"
     "@types/react": "npm:19.0.7"
     "@vercel/analytics": "npm:^1.6.1"
+    "@vercel/speed-insights": "npm:^2.0.0"
     babel-loader: "npm:^9.2.1"
     eslint: "npm:^9.18.0"
     eslint-config-mantine: "npm:^4.0.3"
