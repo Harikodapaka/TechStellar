@@ -14,7 +14,7 @@ export function LegalPageHeader({ title, description, image }: LegalPageHeaderPr
     <Container size="xl">
       <div className={classes.wrapper}>
         <div className={classes.body}>
-          <Title className={classes.title} order={2}>
+          <Title className={classes.title} order={1}>
             {title}
           </Title>
           <Text fz="md" mb={5} component="div">

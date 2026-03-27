@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { AppLayout } from '@/components/AppLayout/AppLayout';
+import { OrganizationJsonLd } from '@/components/JsonLd/OrganizationJsonLd';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 import { theme } from '../theme';
 
@@ -46,6 +47,9 @@ export const metadata: Metadata = {
     shortcut: ['/favicon/apple-touch-icon.png'],
   },
   manifest: '/favicon/site.webmanifest',
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -64,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
+        <OrganizationJsonLd />
       </head>
       <body suppressHydrationWarning>
         <MantineProvider theme={theme} defaultColorScheme="auto">

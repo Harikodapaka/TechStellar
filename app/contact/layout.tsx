@@ -9,6 +9,15 @@ export const metadata: Metadata = {
     description:
       'Have questions or ready to start a project? Contact TechStellar Consulting today.',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Us | TechStellar Consulting',
+    description:
+      'Have questions or ready to start a project? Contact TechStellar Consulting today.',
+  },
+  alternates: {
+    canonical: '/contact',
+  },
 };
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {

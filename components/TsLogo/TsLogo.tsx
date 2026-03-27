@@ -13,6 +13,7 @@ export function TsLogo({ isHeading = false }: { isHeading?: boolean }) {
           alt="TechStellar Logo"
           src="/techstellar-logo.png"
           unoptimized
+          priority
         />
       </Link>
       <Title component={isHeading ? 'h1' : 'p'} order={6} w={100} className={classes.title}>

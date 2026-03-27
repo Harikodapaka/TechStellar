@@ -9,6 +9,15 @@ export const metadata: Metadata = {
     description:
       'Explore career opportunities at TechStellar Consulting. We are hiring talented professionals across multiple technology domains.',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Careers | TechStellar Consulting',
+    description:
+      'Explore career opportunities at TechStellar Consulting. We are hiring talented professionals across multiple technology domains.',
+  },
+  alternates: {
+    canonical: '/careers',
+  },
 };
 
 export default function CareersLayout({ children }: { children: React.ReactNode }) {

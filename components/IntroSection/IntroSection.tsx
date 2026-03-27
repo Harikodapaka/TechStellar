@@ -22,7 +22,7 @@ export function IntroSection() {
     <Container size="xl">
       <div className={classes.inner}>
         <div className={classes.content}>
-          <p className={classes.title}>
+          <h1 className={classes.title}>
             Welcome to{' '}
             <Text
               inherit
@@ -32,7 +32,7 @@ export function IntroSection() {
             >
               TechStellar
             </Text>
-          </p>
+          </h1>
           <Text c="dimmed" mt="md">
             We provide end-to-end IT consulting services in US and Canada, ensuring seamless project
             planning and implementation. Our consultants work with developers, network specialists,
@@ -85,7 +85,7 @@ export function IntroSection() {
           <Image
             src={colorScheme === 'light' ? '/teamwork.svg' : '/teamwork-dark.svg'}
             className={classes.image}
-            alt="teamwork"
+            alt="Team collaboration and professional teamwork at TechStellar"
           />
         </Box>
       </div>

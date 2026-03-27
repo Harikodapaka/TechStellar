@@ -102,13 +102,13 @@ export function ContactUs() {
           />
 
           {submitStatus === 'success' && (
-            <Alert icon={<IconCheck size={16} />} color="green" mt="md">
+            <Alert icon={<IconCheck size={16} />} color="green" mt="md" role="alert">
               Your message has been sent successfully! We&apos;ll get back to you soon.
             </Alert>
           )}
 
           {submitStatus === 'error' && (
-            <Alert icon={<IconExclamationCircle size={16} />} color="red" mt="md">
+            <Alert icon={<IconExclamationCircle size={16} />} color="red" mt="md" role="alert">
               Failed to send your message. Please try again or email us directly.
             </Alert>
           )}

@@ -17,7 +17,7 @@ import { values } from './values';
 
 export function AboutUs() {
   return (
-    <Container size="xl" py="xl" id="services">
+    <Container size="xl" py="xl" id="about-us">
       <div className={classes.wrapper}>
         <Image
           src="/team.svg"
